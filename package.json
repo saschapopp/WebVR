@@ -1,0 +1,24 @@
+{
+  "name": "WebVR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saschapopp/WebVR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saschapopp/WebVR/issues"
+  },
+  "homepage": "https://github.com/saschapopp/WebVR#readme"
+}
