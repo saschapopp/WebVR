@@ -1,18 +1,38 @@
-<html>
-  <head>
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-        <img id="texture" src="img/texture.jpg"></img>
-      </a-assets>
-      <a-box width="1" height="1" depth="1"
-        position="0 5 0"
-        roatation="45 45 45" 
-        scale="1 2.5 1"
-        src="#texture"></a-box>
-        
-    </a-scene>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <title>A-Frame example</title>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="texture" src="img/texture.jpg">
+    </a-assets>   
+  
+     <a-box width="1" height="1" depth="1"
+       position="0 6 0"
+       src="#texture"
+       animation= "property: rotation; to: 360 360 360; loop:true; dur:1000; startEvents:click">
+      </a-box>
+      
+     <a-camera position="3 7 5">
+       <a-cursor color="red"></a-cursor>
+     </a-camera>
+     <a-sky src="img/skybox.jpg"></a-sky>
+     
+    <!--Modellierung:  
+      <a-scene>
+          <a-assets>
+              <a-asset-item id="crate-obj" src="models/aztec-temple.obj"></a-asset-item>
+              <a-asset-item id="crate-mtl" src="models/aztec-temple.mtl"></a-asset-item>
+          </a-assets>
+
+          <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
+      </a-scene>-->
+  <a-scene>
   </body>
 </html>
